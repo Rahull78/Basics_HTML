@@ -7,15 +7,54 @@
     <link rel="stylesheet" href="style.css" />
     <link rel="shortcut icon" href="./res/favicon.png" type="image/x-icon" />
   </head>
+  <!-- Body starts from here -->
   <body>
-    <button class="mode" onclick="darkMode()">Dark</button>
+    <!-- Navbar for nevigation links -->
+    <ul class="unorderedList2">
+      <li class="listItems2">
+        <a
+          href="https://uptakeinfotech.com/about.html"
+          target="_blank"
+          rel="noopener noreferrer"
+          >Company</a
+        >
+      </li>
+      <li class="listItems2">
+        <a
+          href="https://uptakeinfotech.com/hire.html"
+          target="_blank"
+          rel="noopener noreferrer"
+          >Hire Developer</a
+        >
+      </li>
+      <li class="listItems2">
+        <a
+          href="https://uptakeinfotech.com/project-list.html"
+          target="_blank"
+          rel="noopener noreferrer"
+          >Portfolio</a
+        >
+      </li>
+      <li class="listItems2">
+        <a
+          href="https://uptakeinfotech.com/careerPage.html"
+          target="_blank"
+          rel="noopener noreferrer"
+          >Career</a
+        >
+      </li>
+    </ul>
+    <!-- Button for dark mode -->
+    <button id="theme-toggle">Dark Mode</button>
+    <!-- Heading for the main page -->
     <h1>
       This is the Day one of My Internship at
       <a href="https://uptakeinfotech.com/" target="_blank">
+        <!--Gave link to span-->
         <span id="span1">Uptake Infotech Pvt. Ltd.</span></a
       >
     </h1>
-
+    <!-- Added blockquote -->
     <blockquote>
       I commenced my internship today at <mark>Uptake Infotech Pvt. Ltd</mark>.
       as a <q>MERN Stack developer</q>. I am truly appreciative of the
@@ -26,10 +65,14 @@
     </blockquote>
 
     <br />
+
+    <!-- Created Outer div as a parent div for needed changes in future-->
     <div class="topicList">
       <h3>Today i've done these topics which are given bellow:</h3>
+      <!-- Created UnOrdered List ul for the links -->
       <ul class="unorderedList">
         HTML
+        <!-- Passed all the links using a tag to All list Items li -->
         <a
           href="https://www.w3schools.com/html/html_intro.asp"
           target="_blank"
@@ -65,10 +108,20 @@
         <a href="./table.html" target="_blank" rel="noopener noreferrer"
           ><li class="listItems">HTML Tables</li></a
         >
+        <br />
+        <iframe
+          src="../table.html"
+          height="250"
+          width="750"
+          title="table_example"
+        ></iframe>
       </ul>
       <br />
+
+      <!-- Created another Unordered list -->
       <ul class="unorderedList">
         CSS
+        <!-- Created another list items and passed the links -->
         <a
           href="https://www.w3schools.com/css/css_intro.asp"
           target="_blank"
@@ -99,12 +152,158 @@
         >
       </ul>
       <br />
+      <!-- Created another Unorder list for another sections -->
       <ul class="unorderedList">
         Implementation
         <li>Implemented HTML in Index.html</li>
         <li>Implemented CSS on HTML file <mark> Externaly</mark></li>
       </ul>
     </div>
+
+    <!-- Footer starts from here -->
+
+    <footer class="footerClass">
+      <!-- First/Parent Div for all Footer area -->
+      <div class="parentOuter">
+        <!-- Second/Parent Div for all Footer area -->
+        <div class="childOuter">
+          <h4 class="heading4">Company</h4>
+          <ul class="unorderedList3">
+            <li class="listItems3">
+              <a
+                href="https://uptakeinfotech.com/about.html"
+                target="_blank"
+                rel="noopener noreferrer"
+                >About</a
+              >
+            </li>
+            <li class="listItems3">
+              <a
+                href="https://uptakeinfotech.com/careerPage.html"
+                target="_blank"
+                rel="noopener noreferrer"
+                >Career</a
+              >
+            </li>
+            <li class="listItems3">
+              <a
+                href="https://uptakeinfotech.com/hire.html"
+                target="_blank"
+                rel="noopener noreferrer"
+                >Hire Developer</a
+              >
+            </li>
+            <li class="listItems3">
+              <a
+                href="https://uptakeinfotech.com/project-list.html"
+                target="_blank"
+                rel="noopener noreferrer"
+                >Portfolio</a
+              >
+            </li>
+            <li class="listItems3">
+              <a
+                href="https://uptakeinfotech.com/contact.html"
+                target="_blank"
+                rel="noopener noreferrer"
+                >Contact</a
+              >
+            </li>
+          </ul>
+
+          <!-- Third/Child Outer Div -->
+        </div>
+        <div class="childOuter">
+          <h4 class="heading4">Services</h4>
+          <ul class="unorderedList3">
+            <li class="listItems3">
+              <a
+                href="https://uptakeinfotech.com/technologies/machineLearning.html"
+                target="_blank"
+                rel="noopener noreferrer"
+                >AI Development</a
+              >
+            </li>
+            <li class="listItems3">
+              <a
+                href="https://uptakeinfotech.com/mobileDevelopment.html"
+                target="_blank"
+                >mobile Development</a
+              >
+            </li>
+            <li class="listItems3">
+              <a
+                href="https://uptakeinfotech.com/webDevelopment.html"
+                target="_blank"
+                rel="noopener noreferrer"
+                >Web Development</a
+              >
+            </li>
+            <li class="listItems3">
+              <a
+                href="https://uptakeinfotech.com/technologies/desktopApp.html"
+                target="_blank"
+                rel="noopener noreferrer"
+                >desktop Application</a
+              >
+            </li>
+            <li class="listItems3">
+              <a
+                href="https://uptakeinfotech.com/technologies/cloudServices.html"
+                target="_blank"
+                rel="noopener noreferrer"
+                >Cloud Services</a
+              >
+            </li>
+            <li class="listItems3">
+              <a
+                href="https://uptakeinfotech.com/index.html"
+                target="_blank"
+                rel="noopener noreferrer"
+                >Business Products</a
+              >
+            </li>
+            <li class="listItems3">
+              <a
+                href="https://uptakeinfotech.com/technologies/contentMarketing.html"
+                target="_blank"
+                rel="noopener noreferrer"
+                >Digital Marketing</a
+              >
+            </li>
+          </ul>
+        </div>
+
+        <!-- Fourth/Child Outer Div -->
+        <div class="childOuter">
+          <h4 class="heading4">Contact</h4>
+          <ul class="unorderedList3">
+            <li class="listItems3">
+              <a
+                href="https://www.skype.com/en/"
+                target="_blank"
+                rel="noopener noreferrer"
+                >Skype</a
+              >
+            </li>
+            <li class="listItems3">
+              <a href="mailto:contact@uptakeinfotech.com">Email Us</a>
+            </li>
+            <li class="listItems3">
+              <a href="tel:+91 9106948941">Contact Us</a>
+            </li>
+            <li class="listItems3">
+              <a
+                href="https://uptakeinfotech.com/sitemap.html"
+                target="_blank"
+                rel="noopener noreferrer"
+                >Sitemap</a
+              >
+            </li>
+          </ul>
+        </div>
+      </div>
+    </footer>
 
     <script src="script.js"></script>
   </body>

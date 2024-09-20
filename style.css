@@ -1,28 +1,145 @@
+/* General Styles for both modes */
 body {
-  background-color: rgb(24, 23, 89);
   padding: 0;
   margin: 0;
+  transition: background-color 0.3s ease, color 0.3s ease; /* Smooth transition */
+  font-family: "Josefin Sans", sans-serif;
+}
+
+a {
+  text-decoration: none;
+}
+
+body.dark-mode .unorderedList2 {
+  background-color: rgb(24, 23, 89);
   color: white;
 }
 
-h1 {
+body .unorderedList2 {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  list-style-type: none;
+  margin: 10px;
+  padding: 10px;
+  overflow: hidden;
+  background-color: #333;
+}
+
+body .listItems2 {
+  float: left;
+}
+
+body .listItems2 a {
+  display: block;
+  color: white;
   text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
 }
 
-
-h3{
-    margin: 40px;
+body .listItems2 a:hover {
+  background-color: #111;
 }
-#span1 {
+
+/* Dark Mode Styles */
+body.dark-mode {
+  background-color: rgb(24, 23, 89); /* Original dark mode background */
+  color: white;
+}
+
+body.dark-mode h1,
+body.dark-mode h3 {
+  color: white;
+}
+
+body.dark-mode .listItems {
+  color: white;
+}
+
+body.dark-mode #span1 {
   color: green;
-  text-align: center;
+}
+
+/* Light Mode Styles */
+body {
+  background-color: #f4f4f9; /* Light background color */
+  color: #333; /* Dark text color for readability */
 }
 
 .listItems {
-  color: white;
-  font-size: 20px;
+  color: #333; /* Dark text color in light mode */
+}
+
+#span1 {
+  color: blue; /* Link color in light mode */
 }
 
 .unorderedList {
   font-size: 30px;
+}
+
+h1 {
+  text-align: center;
+  color: #333; /* Ensure headings are readable in light mode */
+}
+
+h3 {
+  margin: 40px;
+  color: #333;
+}
+
+/* Attractive Toggle Button */
+#theme-toggle {
+  position: absolute; /* Keep the button in the top right corner, even on scroll */
+  top: 20px;
+  right: 20px;
+  padding: 10px 20px;
+  background-color: #007bff; /* Bright blue color for light mode */
+  color: white;
+  border: none;
+  cursor: pointer;
+  border-radius: 30px;
+  font-size: 16px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Shadow for a lifted effect */
+  transition: background-color 0.3s ease, transform 0.2s ease; /* Smooth hover effect */
+}
+
+/* Button hover effect */
+#theme-toggle:hover {
+  background-color: #0056b3; /* Darker blue on hover in light mode */
+  transform: scale(1.05); /* Slight enlargement on hover */
+}
+
+/* Button in dark mode */
+.dark-mode #theme-toggle {
+  background-color: #f4f4f9; /* Light button background in dark mode */
+  color: #007bff; /* Blue text in dark mode */
+}
+
+/* Hover effect in dark mode */
+.dark-mode #theme-toggle:hover {
+  background-color: #ddd; /* Darker shade on hover in dark mode */
+  transform: scale(1.05); /* Slight enlargement */
+}
+
+footer .parentOuter {
+  background-color: #333;
+  color: white;
+  font-family: "Josefin Sans", sans-serif;
+  text-decoration: none;
+  list-style-type: none;
+  list-style: none;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+}
+
+footer .unorderedList3 {
+  list-style-type: none;
+}
+
+footer .heading4 {
+  text-align: center;
+  font-size: 20px;
 }
