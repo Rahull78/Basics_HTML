@@ -1,0 +1,28 @@
+body {
+  background-color: rgb(24, 23, 89);
+  padding: 0;
+  margin: 0;
+  color: white;
+}
+
+h1 {
+  text-align: center;
+}
+
+
+h3{
+    margin: 40px;
+}
+#span1 {
+  color: green;
+  text-align: center;
+}
+
+.listItems {
+  color: white;
+  font-size: 20px;
+}
+
+.unorderedList {
+  font-size: 30px;
+}
